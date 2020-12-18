@@ -45,6 +45,7 @@ def decrypt_file(key, filename, new_filename):
                     break
 
 
+# 使用rsa生成新的文件名，包含ase密钥和源文件名
 def gen_new_filename(filename, public_key):
     if len(filename) > 76:
         filename = filename[len(filename) - 76:]
